@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.EditText
 
 class RegistroPantalla : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,8 +12,4 @@ class RegistroPantalla : AppCompatActivity() {
         setContentView(R.layout.activity_registro_pantalla)
     }
 
-    fun onClickPedirCita(view: View){
-        val inicioIntent= Intent(this,Calendario::class.java)
-        startActivity(inicioIntent)
-    }
 }
