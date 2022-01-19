@@ -11,5 +11,8 @@ class RegistroPantalla : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_pantalla)
     }
+    fun Return(view:android.view.View){
+        onBackPressed();
+    }
 
 }
