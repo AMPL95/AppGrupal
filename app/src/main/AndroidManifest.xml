@@ -35,6 +35,10 @@
         <activity
             android:name=".Calendario"
             android:exported="true"/>
+        <activity
+            android:name=".Menu2"
+            android:exported="true"/>
+
     </application>
 
 </manifest>

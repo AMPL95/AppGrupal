@@ -15,7 +15,6 @@ class Calendario : AppCompatActivity() {
 
         }
     private fun showDatePickerDialog() {
-        //datepickerfragment está en la carpeta ui
         //incializamos el calendario
         val datePicker = DatePickerFragment{day, month, year -> onDateSelected(day, month, year) }
         datePicker.show(supportFragmentManager, "datePicker")
@@ -23,7 +22,8 @@ class Calendario : AppCompatActivity() {
 
     fun onDateSelected(day:Int, month: Int, year:Int){
         val textopedirCita: TextView = findViewById(R.id.etDate)
-        textopedirCita.setText("has reservado tu cita el día $day de $month")
+        val suma1 = month +1
+        textopedirCita.setText("has reservado tu cita el día $day de $suma1")
     }
 
 

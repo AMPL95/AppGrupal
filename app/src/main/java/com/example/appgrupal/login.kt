@@ -16,16 +16,17 @@ class login : AppCompatActivity() {
 
 
     fun onClickEntrar(view: View){
-        val email: EditText=findViewById(R.id.editEmail);
-        val passw: EditText=findViewById(R.id.editPassword);
-
-        if(email.text.isNotEmpty() && passw.text.isNotEmpty()){
-
-        }
+        val inicioIntent= Intent(this,Menu::class.java)
+        startActivity(inicioIntent)
     }
 
     fun onClickRegistrar(view:View){
         val inicioIntent= Intent(this,RegistroPantalla::class.java)
+        startActivity(inicioIntent)
+    }
+
+    fun onClickEntrar2(view: View){
+        val inicioIntent= Intent(this,Menu2::class.java)
         startActivity(inicioIntent)
     }
 }

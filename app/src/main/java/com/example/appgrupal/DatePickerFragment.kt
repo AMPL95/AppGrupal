@@ -19,7 +19,7 @@ class DatePickerFragment(val listener: (day:Int, month:Int, Year:Int) -> Unit): 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog { //mostrar calendario en fecha actual
         val c = Calendar.getInstance()
         val day = c.get(Calendar.DAY_OF_MONTH)
-        val month = c.get(Calendar.MONTH) + 1 //sumar 1 porque empieza a contar en 0
+        val month = c.get(Calendar.MONTH) //sumar 1 porque empieza a contar en 0
         val year = c.get(Calendar.YEAR)
 
 
