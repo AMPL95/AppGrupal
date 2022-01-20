@@ -1,6 +1,8 @@
 package com.example.appgrupal
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -24,6 +26,10 @@ class Calendario : AppCompatActivity() {
         val textopedirCita: TextView = findViewById(R.id.etDate)
         val suma1 = month +1
         textopedirCita.setText("has reservado tu cita el día $day de $suma1")
+    }
+    fun onClickAtras(view: View){
+        val inicioIntent= Intent(this,RegistroPantalla::class.java)
+        startActivity(inicioIntent)
     }
 
 

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
-
+    tools:context=".Menu"
+>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
@@ -134,6 +134,7 @@
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
         android:src="@drawable/informes"
+
 
         app:layout_constraintBottom_toTopOf="@id/guideline3"
         app:layout_constraintEnd_toStartOf="@id/guideVer2"
