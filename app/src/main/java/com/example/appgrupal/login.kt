@@ -25,8 +25,5 @@ class login : AppCompatActivity() {
         startActivity(inicioIntent)
     }
 
-    fun onClickEntrar2(view: View){
-        val inicioIntent= Intent(this,Menu2::class.java)
-        startActivity(inicioIntent)
-    }
+
 }
