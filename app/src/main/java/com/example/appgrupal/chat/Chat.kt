@@ -13,7 +13,7 @@ import kotlinx.coroutines.*
 class Chat : AppCompatActivity() {
 
     private lateinit var adapter: MessageAdapter
-    private val botList = listOf("Peter", "Francesca", "Luigi", "Igor")
+    private val botList = listOf("el Dr.Louis", "la Dra. Sara", "el Dr. Javier", "el Dr. Ángel")
 
     var messagesList = mutableListOf<Message>()
 
@@ -26,7 +26,7 @@ class Chat : AppCompatActivity() {
         clickEvents()
 
         val random = (0..3).random()
-        customBotMessage("Hello! Today you're speaking with ${botList[random]}, how may I help?")
+        customBotMessage("Buenos días, usuario, soy ${botList[random]}, ¿Cómo puedo ayudarte?")
     }
 
     private fun clickEvents() {
