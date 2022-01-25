@@ -3,19 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/drawable/button_rounded.xml" value="0.2203125" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2203125" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/drawable/receive_round_box.xml" value="0.2203125" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/drawable/send_round_box.xml" value="0.2203125" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/layout/activity_calendario.xml" value="0.33" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/layout/activity_chat.xml" value="0.22" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/layout/activity_menu.xml" value="0.25" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/layout/activity_plan_de_pago.xml" value="0.25" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/layout/activity_registro_pantalla.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/layout/item_mensaje_chat.xml" value="0.25" />
-        <entry key="..\:/Users/angel/Desktop/DAM/Moviles/AppGrupal/app/src/main/res/layout/message_item.xml" value="0.25" />
+        <entry key="..\:/AppGrupal/app/src/main/res/layout/activity_calendario.xml" value="0.11322463768115942" />
+        <entry key="..\:/AppGrupal/app/src/main/res/layout/activity_chat.xml" value="0.22" />
+        <entry key="..\:/AppGrupal/app/src/main/res/layout/activity_informes.xml" value="0.11322463768115942" />
+        <entry key="..\:/AppGrupal/app/src/main/res/layout/activity_main.xml" value="0.11322463768115942" />
+        <entry key="..\:/AppGrupal/app/src/main/res/layout/activity_plan_de_pago.xml" value="0.11322463768115942" />
+        <entry key="..\:/Users/Sara/AndroidStudioProjects/AppGrupal/app/src/main/res/layout/activity_calendario.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Sara/AndroidStudioProjects/AppGrupal/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Sara/AndroidStudioProjects/AppGrupal/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Sara/AndroidStudioProjects/AppGrupal/app/src/main/res/layout/activity_menu.xml" value="0.18" />
+        <entry key="..\:/Users/Sara/AndroidStudioProjects/AppGrupal/app/src/main/res/layout/activity_menu2.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Sara/AndroidStudioProjects/AppGrupal/app/src/main/res/layout/activity_registro_pantalla.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/crack/AndroidStudioProjects/AppGrupal/app/src/main/res/drawable/button_rounded.xml" value="0.403125" />
+        <entry key="..\:/Users/crack/AndroidStudioProjects/AppGrupal/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.403125" />
+        <entry key="..\:/Users/crack/AndroidStudioProjects/AppGrupal/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.403125" />
+        <entry key="..\:/Users/crack/AndroidStudioProjects/AppGrupal/app/src/main/res/drawable/splashscreem.xml" value="0.403125" />
+        <entry key="..\:/Users/crack/AndroidStudioProjects/AppGrupal/app/src/main/res/drawable/text_edit_rounded.xml" value="0.403125" />
+        <entry key="..\:/Users/crack/AndroidStudioProjects/AppGrupal/app/src/main/res/layout/activity_login.xml" value="0.33559782608695654" />
+        <entry key="..\:/Users/crack/AndroidStudioProjects/AppGrupal/app/src/main/res/layout/activity_registro_pantalla.xml" value="0.33559782608695654" />
+        <entry key="..\:/Users/crack/AndroidStudioProjects/AppGrupal/app/src/main/res/layout/content_login.xml" value="0.33559782608695654" />
       </map>
     </option>
   </component>
