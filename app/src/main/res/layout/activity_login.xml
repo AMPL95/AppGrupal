@@ -104,14 +104,5 @@
         app:layout_constraintVertical_bias="0.254"
         app:srcCompat="@drawable/psicologia2" />
 
-    <Button
-        android:id="@+id/botoon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="onClickEntrar2"/>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

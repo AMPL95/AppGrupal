@@ -48,13 +48,6 @@ class login : AppCompatActivity() {
         startActivity(MenuIntent)
     }
 
-    fun onClickEntrar2(view: View){
-        val inicioIntent= Intent(this,Menu::class.java)
-        startActivity(inicioIntent)
-    }
-
-
-
 
     fun onClickEntrar(view: View) {
         val email: EditText = findViewById(R.id.editEmail);
