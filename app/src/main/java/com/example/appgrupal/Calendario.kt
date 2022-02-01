@@ -28,7 +28,7 @@ class Calendario : AppCompatActivity() {
         textopedirCita.setText("has reservado tu cita el día $day de $suma1")
     }
     fun onClickAtras(view: View){
-        val inicioIntent= Intent(this,RegistroPantalla::class.java)
+        val inicioIntent= Intent(this,Menu::class.java)
         startActivity(inicioIntent)
     }
 

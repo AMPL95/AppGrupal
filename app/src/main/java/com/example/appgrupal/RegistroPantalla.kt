@@ -46,6 +46,14 @@ class RegistroPantalla : AppCompatActivity() {
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
+    private fun showError2() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Se ha producido un error con firebase2")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
     private fun irLogin(){
         val irLoginIntent = Intent(this,login::class.java)
         startActivity(irLoginIntent)
@@ -75,7 +83,7 @@ class RegistroPantalla : AppCompatActivity() {
 
                             } else {
                                 //Error
-                                showError()
+                                showError2()
                             }
                         }
 

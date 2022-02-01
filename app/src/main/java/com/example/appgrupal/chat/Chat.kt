@@ -6,7 +6,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appgrupal.R
 import com.example.appgrupal.chat.Constants.RECEIVE_ID
 import com.example.appgrupal.chat.Constants.SEND_ID
-/*import kotlinx.android.synthetic.main.activity_chat.*
+
+import kotlinx.android.synthetic.main.activity_chat.*
 import kotlinx.coroutines.*
 
 
@@ -123,4 +124,5 @@ class Chat : AppCompatActivity() {
         }
     }
 
-}*/
+}
+

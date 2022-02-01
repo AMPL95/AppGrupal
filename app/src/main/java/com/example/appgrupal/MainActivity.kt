@@ -2,10 +2,10 @@ package com.example.appgrupal
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.appgrupal.interfaces.psicoApi
+//import com.example.appgrupal.interfaces.psicoApi
 import com.example.appgrupal.models.Psicologia
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+//import retrofit2.Retrofit
+//import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-    }
+    }/*
     fun onLoad(){
     val retrofit = Retrofit.Builder()
         .baseUrl("") //poner url de nuestra api
@@ -23,6 +23,6 @@ class MainActivity : AppCompatActivity() {
         val pokeapi = retrofit.create(psicoApi::class.java)
 
         val llamada = pokeapi.findDoctor("Louis")
-}
+}*/
 
 }

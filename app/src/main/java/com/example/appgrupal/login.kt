@@ -22,11 +22,9 @@ class login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val btn : Button = findViewById(R.id.botoon)
+
         checkSession()
-        btn.setOnClickListener(){
-          startActivity(Intent(this,Chat::class.java))
-        }
+
     }
     private fun showError() {
         val builder = AlertDialog.Builder(this)
@@ -48,6 +46,11 @@ class login : AppCompatActivity() {
     private fun irMenuActivity(){
         val MenuIntent= Intent(this, Menu::class.java)
         startActivity(MenuIntent)
+    }
+
+    fun onClickEntrar2(view: View){
+        val inicioIntent= Intent(this,Menu::class.java)
+        startActivity(inicioIntent)
     }
 
 

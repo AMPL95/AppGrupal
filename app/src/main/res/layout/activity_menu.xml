@@ -165,6 +165,7 @@
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
         android:src="@drawable/chat"
+        android:onClick="onClickentrarChat"
 
         app:layout_constraintBottom_toTopOf="@id/guideline4"
         app:layout_constraintEnd_toStartOf="@id/guideVer2"

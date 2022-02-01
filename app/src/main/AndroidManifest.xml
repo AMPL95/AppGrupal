@@ -14,7 +14,7 @@
             android:exported="true" />
         <activity
             android:name=".RegistroPantalla"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".login"
             android:exported="true"

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
+import com.example.appgrupal.chat.Chat
 
 class Menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,4 +18,10 @@ class Menu : AppCompatActivity() {
         val inicioIntent= Intent(this,Calendario::class.java)
         startActivity(inicioIntent)
     }
+    fun onClickentrarChat(view: View){
+        val inicioIntent= Intent(this, Chat::class.java)
+        startActivity(inicioIntent)
+    }
+
+
 }
