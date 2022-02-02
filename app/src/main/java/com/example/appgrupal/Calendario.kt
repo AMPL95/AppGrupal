@@ -25,10 +25,12 @@ class Calendario : AppCompatActivity() {
         val miboton: Button = findViewById(R.id.bconfirmar)
         miboton.setOnClickListener{
 
-            db.collection("citas").document(etDate.text.toString()).set(
+            db.collection("citas").document(textDNI.text.toString()).set(
                 hashMapOf("datoscita" to etDate.text.toString(),
                 )
             )
+            val pulsarBoton = Intent(this, Miscitas::class.java)
+            startActivity(pulsarBoton)
 
             val myToast = Toast.makeText(applicationContext, "cita confirmada", Toast.LENGTH_SHORT)
             myToast.setGravity(Gravity.LEFT, 200, 200)

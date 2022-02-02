@@ -28,28 +28,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.24" />
 
-    <EditText
-        android:id="@+id/etDate"
-
-        android:layout_width="298dp"
-        android:layout_height="125dp"
-        android:layout_margin="55dp"
-        android:background="@drawable/transparente"
-        android:clickable="false"
-        android:focusable="false"
-        android:hint="Pide tu cita aquí"
-        android:padding="24dp"
-        android:textAlignment="center"
-        android:textColor="#000b76"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="103dp"
@@ -60,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.091"
-        app:srcCompat="@drawable/ic_baseline_event_available_24" />
+        app:srcCompat="@drawable/ic_person" />
 
     <Button
         android:id="@+id/button"
@@ -79,7 +57,7 @@
         android:id="@+id/textView5"
         android:layout_width="261dp"
         android:layout_height="76dp"
-        android:text="PEDIR CITA"
+        android:text="MIS CITAS"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         android:textStyle="bold"
@@ -91,26 +69,40 @@
         app:layout_constraintVertical_bias="0.09" />
 
     <Button
-        android:id="@+id/bconfirmar"
+        android:id="@+id/buttonRecuperar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="confirmar cita"
+        android:text="ver citas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.705" />
+        app:layout_constraintVertical_bias="0.53" />
 
     <EditText
-        android:id="@+id/textDNI"
+        android:id="@+id/recuperarcita"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="introduzca su DNI para pedir cita"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
+        app:layout_constraintVertical_bias="0.703" />
+
+    <EditText
+        android:id="@+id/textdni2"
+        android:layout_width="308dp"
+        android:layout_height="79dp"
+        android:gravity="center"
+        android:hint="Introduzca su DNI para poder acceder a sus citas"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

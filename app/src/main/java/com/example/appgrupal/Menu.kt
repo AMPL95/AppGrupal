@@ -22,6 +22,10 @@ class Menu : AppCompatActivity() {
         val inicioIntent= Intent(this, Chat::class.java)
         startActivity(inicioIntent)
     }
+    fun onClickMisCitas(view: View){
+        val inicioIntent= Intent(this, Miscitas::class.java)
+        startActivity(inicioIntent)
+    }
 
 
 }
