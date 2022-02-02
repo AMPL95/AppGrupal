@@ -8,6 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
+
 class RegistroPantalla : AppCompatActivity() {
 
     private val db = FirebaseFirestore.getInstance()
@@ -20,6 +21,7 @@ class RegistroPantalla : AppCompatActivity() {
     fun Return(view:android.view.View){
         onBackPressed();
     }
+
 
     fun setBottom(){
         val Nombre : EditText = findViewById(R.id.editNombre);
