@@ -45,6 +45,8 @@
         <activity
             android:name=".Miscitas"
             android:exported="true" />
+        <activity android:name=".PasswordReset"
+            android:exported="true"/>
     </application>
 
 </manifest>
