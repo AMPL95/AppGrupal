@@ -36,6 +36,14 @@ class Calendario : AppCompatActivity() {
         val adaptador2 = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista2)
         spinner2.adapter = adaptador2
 
+        //spinner hora
+        val spinner3 = findViewById<Spinner>(R.id.spnSesion)
+
+        val lista3 = listOf("Presencial","Online")
+
+        val adaptador3 = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista3)
+        spinner3.adapter = adaptador3
+
 
 
         val miboton: Button = findViewById(R.id.bconfirmar)
@@ -44,7 +52,8 @@ class Calendario : AppCompatActivity() {
             db.collection("citas").document(textDNI.text.toString()).set(
                 hashMapOf("datoscita" to etDate.text.toString(),
                     "hora" to spnElementos.selectedItem.toString(),
-                    "especialista" to spnDoctores.selectedItem.toString())
+                    "especialista" to spnDoctores.selectedItem.toString(),
+                    "sesion" to spnSesion.selectedItem.toString())
             )
 
             val myToast = Toast.makeText(applicationContext, "cita confirmada", Toast.LENGTH_SHORT)

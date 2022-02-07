@@ -23,6 +23,7 @@ class Miscitas : AppCompatActivity() {
                 recuperarcita.setText(it.get("datoscita") as String?)
                 recuperarhora.setText(it.get("hora")as String?)
                 recuperardoctor.setText(it.get("especialista")as String?)
+                recuperarsesion.setText(it.get("sesion")as String?)
             }
 
 
