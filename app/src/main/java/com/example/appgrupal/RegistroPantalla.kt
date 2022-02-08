@@ -61,6 +61,10 @@ class RegistroPantalla : AppCompatActivity() {
         startActivity(irLoginIntent)
     }
 
+    private fun irPlandepago(){
+        val irLoginIntent = Intent(this,PlanDePago::class.java)
+        startActivity(irLoginIntent)
+    }
 
     fun onClickConfirmar(view: android.view.View) {
 
@@ -81,7 +85,7 @@ class RegistroPantalla : AppCompatActivity() {
                         .addOnCompleteListener {
                             if (it.isSuccessful) {
                                 setBottom()
-                                irLogin()
+                                irPlandepago()
 
                             } else {
                                 //Error

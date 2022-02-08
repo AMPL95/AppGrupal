@@ -78,16 +78,17 @@
         android:id="@+id/textNextReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
+        android:fontFamily="@font/noticia_text_bold"
+        android:onClick="onClickClikable"
         android:text="¿Has olvidado la contraseña?"
         android:textSize="15dp"
-        android:fontFamily="@font/noticia_text_bold"
-        android:clickable="true"
-        android:onClick="onClickClikable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.66"/>
+        app:layout_constraintVertical_bias="0.66"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/editEntrar"
@@ -118,8 +119,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.739" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

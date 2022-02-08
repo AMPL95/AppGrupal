@@ -2,11 +2,13 @@ package com.example.appgrupal
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import com.google.firebase.storage.FirebaseStorage
+
 
 
 class informes : AppCompatActivity() {
 
+
+/*
     private val storage = FirebaseStorage.getInstance()
     private val storageRef = storage.getReferenceFromUrl("gs://appgrupal-a11b0.appspot.com/pdf/prueba.pdf")
 
@@ -29,4 +31,7 @@ class informes : AppCompatActivity() {
 
 
     }
+
+
+ */
 }
