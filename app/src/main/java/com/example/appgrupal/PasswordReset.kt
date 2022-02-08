@@ -2,12 +2,9 @@ package com.example.appgrupal
 
 import android.os.Bundle
 import android.text.TextUtils
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-
-import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.reset_password.*
 
 
@@ -40,7 +37,7 @@ class PasswordReset : AppCompatActivity() {
         btnBack.setOnClickListener {
             finish()
         }
-        //Para los email que no tenemos guardo la contraseña
+        //Para los email que no tenemos guardado esta opción te da la contraseña que se había puesto anteriormente
        /* val miboton: Button = findViewById(R.id.botonReset)
         miboton.setOnClickListener{
 
