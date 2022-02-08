@@ -27,5 +27,10 @@ class Menu : AppCompatActivity() {
         startActivity(inicioIntent)
     }
 
+    fun onClickInformes(view: View){
+        val inicioIntent= Intent(this, informes::class.java)
+        startActivity(inicioIntent)
+    }
+
 
 }
