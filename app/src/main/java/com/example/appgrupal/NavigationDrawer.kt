@@ -1,7 +1,9 @@
 package com.example.appgrupal
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -11,6 +13,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.appgrupal.chat.Chat
 import com.example.appgrupal.databinding.ActivityNavigationDrawerBinding
 
 class NavigationDrawer : AppCompatActivity() {
@@ -39,6 +42,23 @@ class NavigationDrawer : AppCompatActivity() {
             R.id.nav_home, R.id.nav_profile, R.id.nav_help,R.id.nav_conf), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+    fun onClickPedirCita(view: View){
+        val inicioIntent= Intent(this,Calendario::class.java)
+        startActivity(inicioIntent)
+    }
+    fun onClickentrarChat(view: View){
+        val inicioIntent= Intent(this, Chat::class.java)
+        startActivity(inicioIntent)
+    }
+    fun onClickMisCitas(view: View){
+        val inicioIntent= Intent(this, Miscitas::class.java)
+        startActivity(inicioIntent)
+    }
+
+    fun onClickInformes(view: View){
+        val inicioIntent= Intent(this, informes::class.java)
+        startActivity(inicioIntent)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
