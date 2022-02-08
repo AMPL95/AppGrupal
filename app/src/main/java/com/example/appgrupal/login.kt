@@ -25,8 +25,6 @@ class login : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
 
-        checkSession()
-
 
 
     }
@@ -124,6 +122,10 @@ class login : AppCompatActivity() {
         irCambiarActivity()
     }
 
+    fun onClickPro(view: View) {
+        val inicioIntent= Intent(this,Profesional::class.java)
+        startActivity(inicioIntent)
+    }
 
 
 }

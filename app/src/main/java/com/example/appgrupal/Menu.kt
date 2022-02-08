@@ -12,6 +12,8 @@ class Menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
+
+
     }
 
     fun onClickPedirCita(view: View){
@@ -31,6 +33,8 @@ class Menu : AppCompatActivity() {
         val inicioIntent= Intent(this, informes::class.java)
         startActivity(inicioIntent)
     }
+
+
 
 
 }

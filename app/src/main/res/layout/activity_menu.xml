@@ -126,7 +126,8 @@
         app:layout_constraintEnd_toStartOf="@id/guideVer3"
         app:layout_constraintStart_toStartOf="@id/guideVer2"
         app:layout_constraintTop_toBottomOf="@id/guideline2"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        />
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/btn3"

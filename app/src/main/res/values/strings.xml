@@ -27,9 +27,7 @@
     <string name="menu_home">Inicio</string>
     <string name="menu_profile">Perfil</string>
     <string name="menu_help">Ayuda</string>
-<string name="menu_confi">Configuración</string>
-
-
+    <string name="menu_confi">Configuración</string>
 
 
 </resources>
