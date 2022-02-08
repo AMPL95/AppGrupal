@@ -78,7 +78,7 @@ class Calendario : AppCompatActivity() {
         textopedirCita.setText("Día $day de $suma1")
     }
     fun onClickAtras(view: View){
-        val inicioIntent= Intent(this,Menu::class.java)
+        val inicioIntent= Intent(this,NavigationDrawer::class.java)
         startActivity(inicioIntent)
     }
 

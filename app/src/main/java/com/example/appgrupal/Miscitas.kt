@@ -31,7 +31,7 @@ class Miscitas : AppCompatActivity() {
     }
 
     fun onClickAtras(view: View){
-        val inicioIntent= Intent(this,Menu::class.java)
+        val inicioIntent= Intent(this,NavigationDrawer::class.java)
         startActivity(inicioIntent)
     }
 }
