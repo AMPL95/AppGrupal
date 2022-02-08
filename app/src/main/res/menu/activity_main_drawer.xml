@@ -6,42 +6,22 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_baseline_start_24"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_PedirCita"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_PedirCita" />
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_outline_24"
+            android:title="@string/menu_profile" />
         <item
-            android:id="@+id/nav_MisCitas"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_MisCitas" />
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_baseline_help_24"
+            android:title="@string/menu_help" />
+        <item
+            android:id="@+id/nav_conf"
+            android:icon="@drawable/ic_baseline_build_24"
+            android:title="@string/menu_confi" />
+
     </group>
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_informes"
-            android:title="@string/menu_informes"/>
-        <item
-            android:id="@+id/nav_profesional"
-            android:title="@string/menu_profesional"/>
-    </group>
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_chat"
-            android:title="@string/menu_chat"/>
-        <item
-            android:id="@+id/nav_videollamda"
-            android:title="@string/menu_videollamada"/>
-    </group>
-
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_tareas"
-            android:title="@string/menu_tareas"/>
-        <item
-            android:id="@+id/nav_eventos"
-            android:title="@string/menu_eventos"/>
-    </group>
 </menu>

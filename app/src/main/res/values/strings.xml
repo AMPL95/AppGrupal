@@ -25,16 +25,11 @@
     <!--Navigation Drawer Menu-->
 
     <string name="menu_home">Inicio</string>
-    <string name="menu_PedirCita">Pedir Cita</string>
-    <string name="menu_MisCitas">Mis Citas</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_help">Ayuda</string>
+<string name="menu_confi">Configuración</string>
 
-    <string name="menu_informes">Informes</string>
-    <string name="menu_profesional">Profesional</string>
-    <string name="menu_chat">Chat</string>
 
-    <string name="menu_videollamada">Videollamada</string>
-    <string name="menu_tareas">Tareas</string>
-    <string name="menu_eventos">Eventos</string>
 
 
 </resources>

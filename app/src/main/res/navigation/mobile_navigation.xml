@@ -12,14 +12,19 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_PedirCita"
+        android:id="@+id/nav_profile"
         android:name="com.example.appgrupal.ui.gallery.GalleryFragment"
-        android:label="@string/menu_PedirCita"
+        android:label="@string/menu_profile"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_MisCitas"
+        android:id="@+id/nav_help"
         android:name="com.example.appgrupal.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_MisCitas"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_conf"
+        android:name="com.example.appgrupal.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_confi"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
