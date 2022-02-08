@@ -47,12 +47,12 @@ class login : AppCompatActivity() {
             getSharedPreferences(getString(R.string.preferences), Context.MODE_PRIVATE)
         val email = preferences.getString("email", null)
         if (email != null) {
-            irMenuActivity()
+            irNavigationDrawer()
         }
 
     }
-    private fun irMenuActivity(){
-        val menuIntent= Intent(this, Menu::class.java)
+    private fun irNavigationDrawer(){
+        val menuIntent= Intent(this, NavigationDrawer::class.java)
         startActivity(menuIntent)
     }
     private fun irCambiarActivity(){
@@ -73,7 +73,7 @@ class login : AppCompatActivity() {
                     .addOnCompleteListener() {
                         if (it.isSuccessful) {
 
-                            irMenuActivity()
+                            irNavigationDrawer()
                         } else {
                             showError()
                         }
@@ -97,7 +97,7 @@ class login : AppCompatActivity() {
                             .addOnCompleteListener() {
 
                                 if (it.isSuccessful) {
-                                    irMenuActivity()
+                                    irNavigationDrawer()
                                 } else {
 
                                 }
