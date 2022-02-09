@@ -60,6 +60,10 @@ class NavigationDrawer : AppCompatActivity() {
         val inicioIntent= Intent(this, informes::class.java)
         startActivity(inicioIntent)
     }
+    fun onClickEspecialista(view: View){
+        val inicioIntent= Intent(this, Especialista::class.java)
+        startActivity(inicioIntent)
+    }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppGrupal">
         <activity
+            android:name=".Especialista"
+            android:exported="true" />
+        <activity
             android:name=".Profesional"
             android:exported="true" />
         <activity
@@ -53,6 +56,9 @@
             android:exported="true" />
         <activity
             android:name=".PasswordReset"
+            android:exported="true" />
+        <activity
+            android:name=".informes"
             android:exported="true" />
     </application>
 

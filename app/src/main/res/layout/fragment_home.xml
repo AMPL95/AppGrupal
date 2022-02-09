@@ -120,7 +120,7 @@
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
         android:src="@drawable/profesional"
-
+        android:onClick="onClickEspecialista"
         app:layout_constraintBottom_toTopOf="@id/guideline3"
         app:layout_constraintEnd_toStartOf="@id/guideVer3"
         app:layout_constraintStart_toStartOf="@id/guideVer2"
@@ -135,7 +135,7 @@
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
         android:src="@drawable/informes"
-
+        android:onClick="onClickInformes"
 
         app:layout_constraintBottom_toTopOf="@id/guideline3"
         app:layout_constraintEnd_toStartOf="@id/guideVer2"

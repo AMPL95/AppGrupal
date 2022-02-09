@@ -34,6 +34,11 @@ class Menu : AppCompatActivity() {
         startActivity(inicioIntent)
     }
 
+    fun onClickProfesional(view: View){
+        val inicioIntent= Intent(this, Profesional::class.java)
+        startActivity(inicioIntent)
+    }
+
 
 
 

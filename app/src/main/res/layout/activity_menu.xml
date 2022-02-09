@@ -119,15 +119,16 @@
         android:layout_height="180dp"
         android:adjustViewBounds="true"
         android:backgroundTint="#FFFFFF"
+        android:onClick="onClickProfesional"
         android:scaleType="fitCenter"
         android:src="@drawable/profesional"
-
         app:layout_constraintBottom_toTopOf="@id/guideline3"
         app:layout_constraintEnd_toStartOf="@id/guideVer3"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="@id/guideVer2"
         app:layout_constraintTop_toBottomOf="@id/guideline2"
-        tools:ignore="SpeakableTextPresentCheck"
-        />
+        app:layout_constraintVertical_bias="0.333"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/btn3"
