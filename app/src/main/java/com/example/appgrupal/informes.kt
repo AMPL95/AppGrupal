@@ -12,6 +12,7 @@ class informes : AppCompatActivity() {
     }
 
 
+
 /*
     private val storage = FirebaseStorage.getInstance()
     private val storageRef = storage.getReferenceFromUrl("gs://appgrupal-a11b0.appspot.com/pdf/prueba.pdf")
