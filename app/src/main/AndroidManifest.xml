@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    // Camara
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -54,6 +58,9 @@
             android:exported="true" />
         <activity
             android:name=".PasswordReset"
+            android:exported="true" />
+        <activity
+            android:name=".Videollamada.VideoLLamada"
             android:exported="true" />
         <activity
             android:name=".informes"

@@ -4,7 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageView
+import android.widget.ImageButton
+import com.example.appgrupal.Videollamada.VideoLLamada
 import com.example.appgrupal.chat.Chat
 
 class Menu : AppCompatActivity() {
@@ -36,6 +37,11 @@ class Menu : AppCompatActivity() {
 
     fun onClickProfesional(view: View){
         val inicioIntent= Intent(this, Profesional::class.java)
+        startActivity(inicioIntent)
+    }
+
+    fun onClickVideollamada() {
+        val inicioIntent= Intent(this, VideoLLamada::class.java)
         startActivity(inicioIntent)
     }
 

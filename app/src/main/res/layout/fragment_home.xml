@@ -151,6 +151,7 @@
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
         android:src="@drawable/videollamada"
+        android:onClick="onClickVideollamada"
 
         app:layout_constraintBottom_toTopOf="@id/guideline4"
         app:layout_constraintEnd_toStartOf="@id/guideVer3"
