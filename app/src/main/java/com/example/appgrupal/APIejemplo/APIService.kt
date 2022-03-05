@@ -17,5 +17,5 @@ ponerlo, si no daría error, en la clase profesional.kt esta comentado el hilo.
  */
 interface APIService {
     @GET
-   suspend fun encuentraPorRaza(@Url url:String): Response<DogResponse>
+    suspend fun encuentraPorMedicamento(@Url url:String): Response<MedicamentoResponse>
 }

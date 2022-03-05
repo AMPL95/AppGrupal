@@ -14,5 +14,7 @@ que el objeto menssage recuperado de la api lo llamemos como "var images", ya qu
 pero recuperados como String
  */
 
-data class DogResponse(@SerializedName ("Status")var status:String,
-                       @SerializedName ("message") var images:List<String>)
+data class MedicamentoResponse(@SerializedName("totalFilas")var totalFilas:Int,
+                               @SerializedName("pagina")var pagina:Int,
+                               @SerializedName("tamanioPagina")var tamanioPagina:Int,
+                               @SerializedName("resultados") var variedades:List<Medicina>)

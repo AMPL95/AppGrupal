@@ -9,18 +9,18 @@ import com.example.appgrupal.R
 Aun no las se dominar
  */
 
-class DogAdapter(val images:List<String>):RecyclerView.Adapter<DogViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogViewHolder {
+class MedicinaAdapter(val medicinas:List<Medicina>): RecyclerView.Adapter<MedicinaViewHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MedicinaViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return DogViewHolder(layoutInflater.inflate(R.layout.itemdog,parent,false))
+        return MedicinaViewHolder(layoutInflater.inflate(R.layout.itemmedicamento,parent,false))
     }
 
-    override fun onBindViewHolder(holder: DogViewHolder, position: Int) {
-        val item = images[position]
+    override fun onBindViewHolder(holder: MedicinaViewHolder, position: Int) {
+        val item = medicinas[position]
         holder.bind(item)
     }
 
     override fun getItemCount(): Int {
-       return images.size
+        return medicinas.size
     }
 }
