@@ -6,4 +6,5 @@ import com.google.gson.annotations.SerializedName
 data class Medicina(@SerializedName("nregistro")var id:String,
                     @SerializedName("nombre")var nombre:String,
                     @SerializedName("labtitular")var laboratorio:String,
-                    @SerializedName("cpresc") var prescripcion:String)
+                    @SerializedName("cpresc") var prescripcion:String,
+                    @SerializedName("fotos") var fotos:List<Foto>?)
