@@ -66,7 +66,7 @@ class NavigationDrawer : AppCompatActivity() {
     }
 
     fun onClickProfesional(view: View){
-        val inicioIntent= Intent(this, Profesional::class.java)
+        val inicioIntent= Intent(this, BuscadorMedicamentos::class.java)
         startActivity(inicioIntent)
     }
     fun onClickVideollamada(view: View){
@@ -74,7 +74,7 @@ class NavigationDrawer : AppCompatActivity() {
         startActivity(inicioIntent)
     }
     fun onClickMedicamentos(view: View){
-        val inicioIntent= Intent(this, Profesional::class.java)
+        val inicioIntent= Intent(this, BuscadorMedicamentos::class.java)
         startActivity(inicioIntent)
     }
 

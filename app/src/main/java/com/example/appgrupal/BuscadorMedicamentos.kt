@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class Profesional : AppCompatActivity(), SearchView.OnQueryTextListener {
+class BuscadorMedicamentos : AppCompatActivity(), SearchView.OnQueryTextListener {
 
     private lateinit var binding: ActivityProfesionalBinding
     private lateinit var adapter: MedicinaAdapter

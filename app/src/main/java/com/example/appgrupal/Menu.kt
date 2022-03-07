@@ -35,7 +35,7 @@ class Menu : AppCompatActivity() {
     }
 
     fun onClickProfesional(view: View){
-        val inicioIntent= Intent(this, Profesional::class.java)
+        val inicioIntent= Intent(this, BuscadorMedicamentos::class.java)
         startActivity(inicioIntent)
     }
 

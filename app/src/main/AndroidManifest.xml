@@ -67,7 +67,7 @@
             android:exported="true" />
 
         <activity
-            android:name=".Profesional"
+            android:name=".BuscadorMedicamentos"
             android:exported="true" />
     </application>
 
