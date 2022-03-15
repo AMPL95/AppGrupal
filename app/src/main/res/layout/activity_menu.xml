@@ -201,7 +201,7 @@
         android:adjustViewBounds="true"
         android:backgroundTint="#FFFFFF"
         android:scaleType="fitCenter"
-        android:src="@drawable/tareas"
+        android:src="@drawable/medicamentos"
 
         app:layout_constraintBottom_toTopOf="@id/guideline5"
         app:layout_constraintEnd_toStartOf="@id/guideVer2"
