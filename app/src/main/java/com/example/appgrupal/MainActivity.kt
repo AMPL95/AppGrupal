@@ -12,17 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-    }/*
-    fun onLoad(){
-    val retrofit = Retrofit.Builder()
-        .baseUrl("") //poner url de nuestra api
-        .addConverterFactory(GsonConverterFactory.create())
-        .build()
-
-        val pokeapi = retrofit.create(psicoApi::class.java)
-
-        val llamada = pokeapi.findDoctor("Louis")
-}*/
+    }
 
 }

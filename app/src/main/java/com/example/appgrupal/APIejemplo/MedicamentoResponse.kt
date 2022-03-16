@@ -9,7 +9,7 @@ Si no se crea esta clase, la interfaz APIservice no funcionaria ya que hay que p
 parametro.
 
 los @ son para decir especificiamente los objetos que se recuperan de la api en internet, de no poner los @
-las variables deben llamarse identicamente a los objetos que se nos da en la api.
+las variables deben llamarse identicamente a los objetos que se nos proporciona la api.
  */
 
 data class MedicamentoResponse(@SerializedName("totalFilas")var totalFilas:Int,

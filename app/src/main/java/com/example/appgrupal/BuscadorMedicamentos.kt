@@ -31,6 +31,7 @@ class BuscadorMedicamentos : AppCompatActivity(), SearchView.OnQueryTextListener
         initRecyclerView()
     }
 
+    // Función que inicia el adapter, se le pasa la lista de medicamentos y se muestran en esta vista
     private fun initRecyclerView() {
         adapter = MedicinaAdapter(listaMedicamentos)
         binding.rvMedicamentos.layoutManager = LinearLayoutManager(this)
@@ -63,10 +64,10 @@ class BuscadorMedicamentos : AppCompatActivity(), SearchView.OnQueryTextListener
 
             //HILO PRINCIPAL QUE VE EL USUARIO
             runOnUiThread{
-                /* si la call va bien pues dogImages que es una mutableList hara el metodo clear para limpiarse
-                y addAll para añadir otra nueva lista a la lista dogImages, osea una lista dentro de otra lista. Paranoia
-                y lo de las interrogaciones ya de locos... Es por si el nombre que metemos no da resultados pues la lista
-                puede ser nula y dar como resultado una emptyList
+                /* si la call va bien pues listaMedicamentos (que es una mutableList) hara el metodo clear para limpiarse
+                y addAll para añadir todos los objetos de la variable medicina a la listaMedicamentos, osea una lista
+                dentro de otra lista. Las interrogaciones son por si el nombre que metemos no da resultados pues la
+                lista puede ser nula y dar como resultado una emptyList
                  */
                 if (call1.isSuccessful){
                     val medicina = medicacion?.variedades ?: emptyList()
