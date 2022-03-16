@@ -32,12 +32,12 @@ class Chat : AppCompatActivity() {
 
     private fun clickEvents() {
 
-        //Send a message
+        //envia el mensaje al pulsar el botón
         btn_send.setOnClickListener {
             sendMessage()
         }
 
-        //Scroll back to correct position when user clicks on text view
+        //desplaza el mensaje una posición hacia atras cuando se añade un nuevo mensaje
         et_message.setOnClickListener {
             GlobalScope.launch {
                 delay(100)
@@ -50,6 +50,7 @@ class Chat : AppCompatActivity() {
         }
     }
 
+    //inicio del recyclerView
     private fun recyclerView() {
         adapter = MessageAdapter()
         rv_messages.adapter = adapter
@@ -59,7 +60,7 @@ class Chat : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        //In case there are messages, scroll to bottom when re-opening app
+        //en caso de que haya mensajes, se desplazará el chat hasta el ultimo mensaje
         GlobalScope.launch {
             delay(100)
             withContext(Dispatchers.Main) {
@@ -68,6 +69,7 @@ class Chat : AppCompatActivity() {
         }
     }
 
+    //funcion para captar el mensaje enviado y si no es nulo llama a la funcion botResponse
     private fun sendMessage() {
         val message = et_message.text.toString()
 
@@ -84,32 +86,37 @@ class Chat : AppCompatActivity() {
         }
     }
 
+    /*al llamar a esta función se le pasa el mensaje y como previamente en la clase BotResponses
+    habíamos definido la funcion basiResponses se guarda el String que retorna ese metodo
+     */
     private fun botResponse(message: String) {
 
 
         GlobalScope.launch {
-            //Fake response delay
+            //efecto de espera de 1 segundo
             delay(1000)
 
             withContext(Dispatchers.Main) {
-                //Gets the response
+                //obtendo el String del método
                 val response = BotResponses.basicResponses(message)
 
-                //Adds it to our local list
+                //lo añado a la lista de mensajes como receive_id para saber donde colocarlo
                 messagesList.add(Message(response, RECEIVE_ID))
 
-                //Inserts our message into the adapter
+                //inserto el mensaje en el adapter con este método definido en la clase MessageAdapter
                 adapter.insertMessage(Message(response, RECEIVE_ID))
 
-                //Scrolls us to the position of the latest message
+                //desplazo los mensajes una casilla para ver el nuevo
                 rv_messages.scrollToPosition(adapter.itemCount - 1)
 
-                //Starts Google
+
 
             }
         }
     }
 
+
+    //función que utilizo en el onCreate para inicializar el chat con un mensaje recibido
     private fun customBotMessage(message: String) {
 
         GlobalScope.launch {

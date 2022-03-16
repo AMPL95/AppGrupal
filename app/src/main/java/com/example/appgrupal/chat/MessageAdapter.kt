@@ -18,8 +18,6 @@ class MessageAdapter : RecyclerView.Adapter<MessageAdapter.MessageViewHolder>() 
     inner class MessageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         init {
             itemView.setOnClickListener {
-
-                //Remove message on the item clicked
                 messagesList.removeAt(adapterPosition)
                 notifyItemRemoved(adapterPosition)
             }
@@ -42,6 +40,7 @@ class MessageAdapter : RecyclerView.Adapter<MessageAdapter.MessageViewHolder>() 
         val currentMessage = messagesList[position]
 
 
+        // aqui utilizaremos las constantes declaradas para cuando el valor del mensaje sea uno u otro
         when (currentMessage.id) {
             SEND_ID -> {
 

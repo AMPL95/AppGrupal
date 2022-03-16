@@ -5,6 +5,7 @@ import java.sql.Date
 import java.sql.Timestamp
 import java.text.SimpleDateFormat
 
+//objeto no implementado en el proyecto final
 object Time {
 
     fun timeStamp(): String {
