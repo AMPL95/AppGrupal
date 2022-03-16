@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appgrupal.APIejemplo.APIService
 import com.example.appgrupal.APIejemplo.Medicina
 import com.example.appgrupal.APIejemplo.MedicinaAdapter
-import com.example.appgrupal.databinding.ActivityProfesionalBinding
+import com.example.appgrupal.databinding.ActivityMedicamentosBinding
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -17,14 +17,14 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class BuscadorMedicamentos : AppCompatActivity(), SearchView.OnQueryTextListener {
 
-    private lateinit var binding: ActivityProfesionalBinding
+    private lateinit var binding: ActivityMedicamentosBinding
     private lateinit var adapter: MedicinaAdapter
     private var listaMedicamentos= mutableListOf<Medicina>()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityProfesionalBinding.inflate(layoutInflater)
+        binding= ActivityMedicamentosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.svMedicamentos.setOnQueryTextListener(this)
