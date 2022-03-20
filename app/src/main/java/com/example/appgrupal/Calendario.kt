@@ -17,6 +17,9 @@ class Calendario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calendario)
+
+        supportActionBar!!.setTitle("Pimentes")
+
         etDate.setOnClickListener{ showDatePickerDialog() }
 
         //spinner hora

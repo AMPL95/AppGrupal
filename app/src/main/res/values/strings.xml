@@ -5,7 +5,7 @@
 
     <string name="hola_de_javi">hola de javi</string>
     <string name="hola_de_angelito">hola de angelito</string>
-    <string name="title_activity_login">login</string>
+    <string name="title_activity_login">Pimentes</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
@@ -24,7 +24,7 @@
 
     <!--Navigation Drawer Menu-->
 
-    <string name="menu_home">Inicio</string>
+    <string name="menu_home">Pimentes</string>
     <string name="menu_profile">Perfil</string>
     <string name="menu_help">Ayuda</string>
     <string name="menu_confi">Configuración</string>

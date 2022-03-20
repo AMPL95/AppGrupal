@@ -15,6 +15,7 @@ class Miscitas : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_miscitas)
+        supportActionBar!!.setTitle("Pimentes")
 
         val miboton: Button = findViewById(R.id.buttonRecuperar)
         miboton.setOnClickListener{

@@ -21,6 +21,7 @@ class Chat : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
+        supportActionBar!!.setTitle("Pimentes")
 
         recyclerView()
 

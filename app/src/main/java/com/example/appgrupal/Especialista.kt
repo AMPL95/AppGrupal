@@ -9,6 +9,8 @@ class Especialista : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_especialista)
+
+        supportActionBar!!.setTitle("Pimentes")
     }
 
     fun onClickAtras(view: View){

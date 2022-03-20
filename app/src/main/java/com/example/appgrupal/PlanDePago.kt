@@ -27,6 +27,8 @@ class PlanDePago : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_plan_de_pago)
 
+        supportActionBar!!.setTitle("Pimentes")
+
         carrousel.pageCount = planesdepago.size
 
         carrousel.setImageListener { position, imageView ->

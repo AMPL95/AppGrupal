@@ -18,11 +18,11 @@ import com.example.appgrupal.Videollamada.Constants.TAG
 import com.example.appgrupal.databinding.ActivityVideollamadaBinding
 import kotlin.math.log
 
-class VideoLLamada: AppCompatActivity() {
+class VideoLLamada : AppCompatActivity() {
 
     private lateinit var binding: ActivityVideollamadaBinding
 
-    private var imageCapture: ImageCapture?=null
+    private var imageCapture: ImageCapture? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,31 +30,33 @@ class VideoLLamada: AppCompatActivity() {
         binding = ActivityVideollamadaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        if (allPermissionGranted()){
+        supportActionBar!!.setTitle("Pimentes")
+        if (allPermissionGranted()) {
             startCamera()
-        }else{
+        } else {
             ActivityCompat.requestPermissions(
-                this, Constants.REQUIRED_PERMISSIONS, Constants.REQUEST_CODE_PERMISSIONS
+                this,
+                Constants.REQUIRED_PERMISSIONS,
+                Constants.REQUEST_CODE_PERMISSIONS
             )
         }
     }
 
-    private fun startCamera(){
+    private fun startCamera() {
 
         val cameraProviderFuture = ProcessCameraProvider.getInstance(this)
 
         cameraProviderFuture.addListener({
 
-            val  cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
+            val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
 
-            val preview = Preview.Builder().build().also {
-                mPreview->
+            val preview = Preview.Builder().build().also { mPreview ->
                 mPreview.setSurfaceProvider(
                     binding.viewFinder.surfaceProvider
                 )
             }
 
-        imageCapture= ImageCapture.Builder().build()
+            imageCapture = ImageCapture.Builder().build()
 
             val cameraSelector = CameraSelector.DEFAULT_FRONT_CAMERA
 
@@ -63,10 +65,13 @@ class VideoLLamada: AppCompatActivity() {
                 cameraProvider.unbindAll()
 
                 cameraProvider.bindToLifecycle(
-                    this, cameraSelector,preview,imageCapture
+                    this,
+                    cameraSelector,
+                    preview,
+                    imageCapture
                 )
 
-            }catch (e:Exception){
+            } catch (e: Exception) {
                 Log.d(Constants.TAG, "Error al encender la camara", e)
             }
 
@@ -82,19 +87,20 @@ class VideoLLamada: AppCompatActivity() {
     ) {
         //
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if(requestCode == Constants.REQUEST_CODE_PERMISSIONS){
-            if (allPermissionGranted()){
+        if (requestCode == Constants.REQUEST_CODE_PERMISSIONS) {
+            if (allPermissionGranted()) {
                 startCamera()
-            }else{
-                Toast.makeText(this, "El usuario no ha otrogado los permisos", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "El usuario no ha otrogado los permisos", Toast.LENGTH_SHORT)
+                    .show()
 
-            finish()
+                finish()
             }
         }
     }
 
 
-    private fun allPermissionGranted()=
+    private fun allPermissionGranted() =
         Constants.REQUIRED_PERMISSIONS.all {
             ContextCompat.checkSelfPermission(
                 baseContext, it

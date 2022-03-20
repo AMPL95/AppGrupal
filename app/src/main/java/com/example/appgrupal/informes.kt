@@ -9,6 +9,8 @@ class informes : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_informes)
+
+        supportActionBar!!.setTitle("Pimentes")
     }
 
 

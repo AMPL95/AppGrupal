@@ -27,6 +27,8 @@ class BuscadorMedicamentos : AppCompatActivity(), SearchView.OnQueryTextListener
         binding= ActivityMedicamentosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar!!.setTitle("Pimentes")
+
         binding.svMedicamentos.setOnQueryTextListener(this)
         initRecyclerView()
     }

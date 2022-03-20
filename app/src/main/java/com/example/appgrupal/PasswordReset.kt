@@ -17,6 +17,8 @@ class PasswordReset : AppCompatActivity() {
         setContentView(R.layout.reset_password)
         mAuth = FirebaseAuth.getInstance()
 
+        supportActionBar!!.setTitle("Pimentes")
+
        botonReset.setOnClickListener {
             val email = emailReset.text.toString().trim()
 

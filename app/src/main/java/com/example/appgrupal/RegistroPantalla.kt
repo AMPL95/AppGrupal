@@ -16,6 +16,8 @@ class RegistroPantalla : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_pantalla)
+
+        supportActionBar!!.setTitle("Pimentes")
     }
 
     fun Return(view:android.view.View){
